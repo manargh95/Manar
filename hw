@@ -1,0 +1,256 @@
+واجب1
+<html>
+<?php
+        $myname = "tawfiq s barhoom";
+        $department = "WDMM";
+         $average = 80.7;
+   print"<table border=1><thead> <tr><th>";
+   print “name</th><th>department</th><th>average";
+   print "</th></tr> </thead><tbody><tr><td>”;        
+   Print”$myname</td><td>$department</td><td>$average”;
+   print”</td></tr></tbody></table>";
+?>
+</html>
+واجب2
+<!DOCTYPE html>
+<html>
+<?php
+$myGrads=array
+$myGrads["english"]="100";
+$myGrads["arabic"]="99";
+$myGrads["islamic"]="100";
+$myGrads=( "english"=>"100","arabic"=>"99","islamic"=>"100");
+?>
+</html>
+واجب3
+<!DOCTYPE html>
+<html>
+
+<?
+$ArabCountries=array("palestine"=>"Quds","SaudiArabia"=>"Riyadh","Eygpt"=>"Cairo","Jordan"=>"Amman","Qatar"=>"Doha");
+
+?>
+</html>
+واجب4
+<!DOCTYPE html>
+<html>
+
+<?
+$IUG=array("IT"=>array("dean"=>"Rebhi","H"=>"99%","L"=>"40%"),"Eng"=>array("dean"=>"Mohsen","H"=>"97%","L"=>"47%")
+);
+print $IUG["IT"];
+print $IUG["Eng"];
+?>
+</html>
+واجب5
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+$myGrads=array("Eng"=>100,"Arb"=>99,"ISLM"=>98);
+<table><tr><td>grads</td></tr>
+	<tbody> <td>
+foreach($myGrads as $k => $v)
+print("$k is $v <br>");
+</td>
+</tbody>
+</table>
+?>
+</body>
+</html>
+واجب6
+<!DOCTYPE html>
+<html>
+<?
+$cars = array( "car1" => array("make" => "Toyota", "color" => "Green", "year" => 1999,"engine" => 1998), 
+"car2" => array("make" => "BMW", “color" => "RED", "year" => 2005,"engine" => 2400), 
+); 
+
+<table border="1"> <thead>
+	<tr><th>make</th> <th>color</th><th> year</th> <th> engine</th></tr>
+</thead>
+	<tbody>
+		for(reset($cars);$k=key($cars);next($cars)){
+		echo"<tr><th>$k</th>";
+		for(reset($cars[$k]);$kk($cars[$k]);next($cars[$k])){
+echov<td>, $cars[$k] [$kk],</td>;
+	}
+	}
+	</tr>
+	</tbody>
+</table>;
+?>
+</html>
+واجب7
+<!DOCTYPE html>
+<html>
+<?
+$cars = array( "car1" => array("make" => "Toyota", "color" => "Green", "year" => 1999,"engine" => 1998), 
+"car2" => array("make" => "BMW", “color" => "RED", "year" => 2005,"engine" => 2400), 
+); 
+$cars=aray
+$make=$_post['make'];
+foreach($cars as $k=>$v){
+if(array_search($make,$v)){
+?>
+<? for (reset($v);$kk=key($v);next($v)){
+	echo $v[$kk];
+}	
+die();
+}
+}
+echo "not found";
+?>
+
+</html>
+واجب8
+<!DOCTYPE html>
+<html>
+<?
+$Fname=("Ahmad","Saleem","Najeeb");
+sort($Fname) by ASC;
+?>
+
+</html>
+واجب9
+<!DOCTYPE html>
+<html> <body>
+	class Person {
+private $name;
+private $age;
+private $tall;
+public function setName($n){ $this->name = $n;}
+public function setAge($g) { $this->age = $g;}
+public function setTall($t) {$this->tall = $t;}
+
+public function getName($n){return $this->name = $n;}
+public function getAge($g) {return $this->age = $g;}
+public function getTall($t) {return $this->tall = $t;}
+}
+
+
+</body>
+
+</html>
+واجب10
+<!DOCTYPE html>
+<html> <body>
+	class Employee { 
+    private $name; 
+   private $salary;
+    
+    public function setName($n){ $this->name = $n;}
+    public function setSalary($s){$this->salary = $s;}
+}
+ print 
+   	
+$emp = new Employee;
+<ul><li>
+$emp->setName(“Alaa”);
+</li>
+<li>
+$emp->setSalary(5000);
+  </li>
+   	</ul>  	
+
+</body>
+
+</html>
+واجب11
+<!DOCTYPE html>
+<html> <body>
+	class appoitment{
+private $time;
+private $place;
+
+public function SetTime($T)
+{$this->time=$t;}
+public function SetPlace($p)
+{$this->place=$p;}
+public function GetTime($T)
+{return $this->time=$T;}
+public function GetPlace($p)
+{return $this->place=$p;}
+public function_construct($T,$p){
+	$this SetTime ($T);
+	$this SetPlace ($p);
+}
+}
+(!preg_match("/^[a-z]{1}[0-9]{3}$/",$string))
+return TRUE;
+else
+return False;
+
+</body>
+
+</html>
+واجب12
+<!DOCTYPE html>
+<html> <body>
+	class appoitment{
+private $time;
+private $place;
+
+public function SetTime($T)
+{$this->time=$t;}
+public function SetPlace($p)
+{$this->place=$p;}
+public function GetTime($T)
+{return $this->time=$T;}
+public function GetPlace($p)
+{return $this->place=$p;}
+public function_construct($T,$p){
+	$this SetTime ($T);
+	$this SetPlace ($p);
+}
+}
+(!preg_match("/^[a-z]{1}[0-9]{3}$/",$string))
+return TRUE;
+else
+return False;
+
+</body>
+
+</html>
+واجب13
+<!DOCTYPE html>
+<html> <body>
+	 <?class Appointment {
+    private $time;
+    private $place;
+    private static $AppoitmentCount = 0;
+ static function get$AppoitmentCount (){return self::$$AppoitmentCount;} 
+
+   public function setTime($m){$this->time=$m;}
+   public function getTime(){return $this->time;}
+   public function setPlace($c){
+             if($this->placeValidate($c))             $this->place = $c;
+            else     echo "bad place...";
+    }
+   public function getPlace(){return $this->place;}     
+   public function __construct($time, $place ){
+         $this->setTime($time);
+         $this->setPlace($place );
+     }
+
+ public function __destruct(){
+     echo "<br>the Appointment passed...";
+  }
+private function placeValidate($plc){
+   if(preg_match("/^[a-z A-Z]{1}[0-9]{3}$/", $plc))
+	   return TRUE;
+       else 
+          return FALSE;
+   }
+
+}
+
+$frinda = new Appointment("4:00 pm","i215");
+echo "Time:", $frinda->getTime(), "<p>Place:", $frinda->getPlace();
+
+?>
+
+
+</body>
+
+</html>
